@@ -34,7 +34,7 @@ class AnimationFragment : Fragment() {
     }
 
     // To play anim again after returning back from the [SecondFragment]
-    // we have to set android:saveEnabled on the LottieAnimationView.
+    // we have to set android:saveEnabled to false on the LottieAnimationView.
     private fun playAnimation() {
         animView.setMaxProgress(0.3f)
         animView.progress = 0f
